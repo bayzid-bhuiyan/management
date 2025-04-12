@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+
+    <!-- Summary Overview -->
+    <div class="summary">
+      <h2>Summary Overview</h2>
+      <ul>
+        <li>Total Courses: <span id="totalCourses">0</span></li>
+        <li>Total Subjects: <span id="totalSubjects">0</span></li>
+        <li>Total Applications: <span id="totalApplications">0</span></li>
+        <li>Approved Applications: <span id="approvedApps">0</span></li>
+        <li>Pending Applications: <span id="pendingApps">0</span></li>
+      </ul>
+    </div>
+
+    <h2>Create Course</h2>
+    <form id="courseForm">
+      <input type="text" id="courseName" placeholder="Course Name" required>
+      <button type="submit">Add Course</button>
+    </form>
+    <ul id="courseList"></ul>
+
+    <h2>Create Subject</h2>
+    <form id="subjectForm">
+      <input type="text" id="subjectName" placeholder="Subject Name" required>
+      <button type="submit">Add Subject</button>
+    </form>
+    <ul id="subjectList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

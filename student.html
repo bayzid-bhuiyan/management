@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Dashboard</h1>
+
+    <h2>Available Courses</h2>
+    <ul id="availableCourses"></ul>
+
+    <h2>Apply for a Course</h2>
+    <form id="applyForm">
+      <select id="courseSelect" required>
+        <option value="" disabled selected>Select a course</option>
+      </select>
+      <input type="text" id="studentName" placeholder="Your Name" required>
+      <button type="submit">Apply</button>
+    </form>
+
+    <p id="applyMsg" style="color: green;"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
